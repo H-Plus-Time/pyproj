@@ -129,6 +129,7 @@ jobs:
         env:
           CIBW_SKIP: "pp*-win* pp31*"
           CIBW_ARCHS: ${{ matrix.arch }}
+          CIBW_ENABLE: cpython-freethreading
           CIBW_ENVIRONMENT_LINUX:
             PROJ_WHEEL=true
             PROJ_NETWORK=ON
